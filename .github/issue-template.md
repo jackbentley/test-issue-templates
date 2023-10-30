@@ -1,0 +1,2 @@
+Foo bar
+Issue templatea
