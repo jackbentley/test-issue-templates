@@ -10,7 +10,7 @@ body:
     attributes:
       value: |
         Thank you for your interest in having a governance review request from TAG Contributor Strategy. 
-        For more information on what a governance is, please visit our [documentation about governance](https://contribute.cncf.io/maintainers/governance/overview/).
+        For more information on what a governance is, please visit our [governance documentation](https://contribute.cncf.io/maintainers/governance/overview/).
 
   - type: input
     attributes:
@@ -20,9 +20,47 @@ body:
 
   - type: input
     attributes:
-      label: Website url
+      label: Project Website
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Please provide at least 2 people who are able to help us understand the governance of your project, in case there is material that is not clear.
+
+  - type: input
+    attributes:
+      label: Contact Details 1
+      placeholder: ex. @githubHandle
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Contact Details 2
+      placeholder: ex. @githubHandle
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Reason for governance review request
+      description: |
+        What is the reason for your governance review request? This will help us understand the context of your request,
+        help us prioritize it and also help us understand what you are looking for from the review.
+      options:
+        - CNCF Sandbox acceptance application
+        - Application for moving levels from Sandbox to Incubation
+        - Application for moving levels from Incubation to Graduation
+        - Other (please specify in the “Additional Notes” input at the end of this form)
+    validations:
+      required: true
+
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation
 
   - type: textarea
     attributes:
@@ -34,61 +72,7 @@ body:
     validations:
       required: true
 
-  - type: input
-    attributes:
-      label: Contact Details 1
-      description: Please provide at least 2 people who are able to help us understand the governance of your project, in case there is material that is not clear.
-      placeholder: ex. @githubHandle
-    validations:
-      required: true
-  - type: input
-    attributes:
-      label: Contact Details 2
-      description: Please provide at least 2 people who are able to help us understand the governance of your project, in case there is material that is not clear.
-      placeholder: ex. @githubHandle
-    validations:
-      required: true
-
   - type: textarea
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Additional notes
+      description: Please add any additional notes here.
