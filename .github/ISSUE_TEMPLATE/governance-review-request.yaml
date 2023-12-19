@@ -12,6 +12,11 @@ body:
         Thank you for your interest in having a governance review request from TAG Contributor Strategy. 
         For more information on what a governance is, please visit our [governance documentation](https://contribute.cncf.io/maintainers/governance/overview/).
 
+  - type: markdown
+    attributes:
+      value: |
+        ## Project information
+
   - type: input
     attributes:
       label: Project Name
@@ -56,11 +61,18 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    attributes:
+      label: Are there any sub-projects, plugins, and related?
+      description: |
+        If your project includes the sub-projects, plugins, and other notable divisions, please write them here.
+    validations:
+      required: true
 
   - type: markdown
     attributes:
       value: |
-        ## Documentation
+        ## Governance information
 
   - type: textarea
     attributes:
@@ -69,6 +81,50 @@ body:
         If your project governance is based on one of the [CNCF governance templates](https://contribute.cncf.io/maintainers/templates/governance-intro/), 
         please indicate which one it is here, with any differences for your project.
         If not, please write a short description of your governance model.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Governance model
+      description: |
+        Please provide the governance documentation of your project in separate lines. This would include links to documents that explain:
+        - Project purpose
+        - Maintainer List (with employer information)
+        - How your project is making decisions
+        - How and when contributors are moving through the contributor ladder (e.g. becoming a maintainer)
+        - Maintainer life cycle with information about how and when maintainers are demoted
+        - Code of Conduct
+        - Contributor Guide
+        - How your community conduct communication and meetings
+        - How your community handles security reporting and response
+        - Who owns what code and docs
+        
+        These documents do NOT need to be separate documents. Single document or a few documents that explain everything above is good for us to read, understand and evaluate your project governance.
+
+        **NOTE**: Make sure you provide links to these documents as snapshots with commit hashes and use the same commit for all links from the same repository. Example: `https://github.com/FOO/BAR/blob/<commitHash>/path/to/doc.md`
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Governance Execution Examples
+      description: |
+        Do you have any examples of execution of the governance? Examples could be:
+        - Voting
+        - Promoting a contributor / demoting a maintainer
+        - Security response
+        - Meeting recordings
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Governance Evolution
+      description: |
+        Governance evolution is the observable changes and improvements the project makes to its governance over the project's lifespan. It is expected that changes will occur over the project's life and that such changes are iterative, tested, and adjusted.
+
+        If there are any major milestones in the project's governance over time, please describe them here with supporting URL links.
     validations:
       required: true
 
