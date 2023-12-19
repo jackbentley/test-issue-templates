@@ -86,7 +86,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Governance model
+      label: Governance documents
       description: |
         Please provide the governance documentation of your project in separate lines. This would include links to documents that explain:
         - Project purpose
