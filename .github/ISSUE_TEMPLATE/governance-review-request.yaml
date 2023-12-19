@@ -1,5 +1,5 @@
 name: Governance review request
-description: Ask for a governance review from TAG Contributor Strategy
+description: Ask for a governance review for your project from TAG Contributor Strategy
 title: "[Governance Review]: PROJECT NAME"
 labels: ["wg/governance"]
 projects: ["cncf/25"]
