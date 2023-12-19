@@ -54,7 +54,6 @@ body:
         - Application for moving levels from Sandbox to Incubation
         - Application for moving levels from Incubation to Graduation
         - Other (please specify in the “Additional Notes” input at the end of this form)
-      default: 0
     validations:
       required: true
 
