@@ -49,12 +49,11 @@ body:
         What is the reason for your governance review request? This will help us understand the context of your request,
         help us prioritize it and also help us understand what you are looking for from the review.
       options:
-        - (please select)
+        - None
         - CNCF Sandbox acceptance application
         - Application for moving levels from Sandbox to Incubation
         - Application for moving levels from Incubation to Graduation
         - Other (please specify in the “Additional Notes” input at the end of this form)
-      default: 0
     validations:
       required: true
 
