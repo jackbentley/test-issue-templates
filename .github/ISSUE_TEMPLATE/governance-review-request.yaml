@@ -1,25 +1,55 @@
-name: Bug Report
+name: Governance review request
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+title: "[Governance Review]: PROJECT NAME"
+labels: ["wg/governance"]
+projects: ["cncf/25"]
 assignees:
   - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thank you for your interest in having a governance review request from TAG Contributor Strategy. 
+        For more information on what a governance is, please visit our [documentation about governance](https://contribute.cncf.io/maintainers/governance/overview/).
+
   - type: input
-    id: contact
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Project Name
     validations:
-      required: false
+      required: true
+
+  - type: input
+    attributes:
+      label: Website url
+    validations:
+      required: true
+
   - type: textarea
-    id: what-happened
+    attributes:
+      label: Governance model
+      description: |
+        If your project governance is based on one of the [CNCF governance templates](https://contribute.cncf.io/maintainers/templates/governance-intro/), 
+        please indicate which one it is here, with any differences for your project.
+        If not, please write a short description of your governance model.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Contact Details 1
+      description: Please provide at least 2 people who are able to help us understand the governance of your project, in case there is material that is not clear.
+      placeholder: ex. @githubHandle
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Contact Details 2
+      description: Please provide at least 2 people who are able to help us understand the governance of your project, in case there is material that is not clear.
+      placeholder: ex. @githubHandle
+    validations:
+      required: true
+
+  - type: textarea
     attributes:
       label: What happened?
       description: Also tell us, what did you expect to happen?
