@@ -47,6 +47,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    attributes:
+      label: Channel in CNCF Slack
+      placeholder: ex. `#channel-name`
+      description: |
+        Please provide the channel name in CNCF Slack where we can reach out to you for any questions.
+    validations:
+      required: true
+
   - type: dropdown
     attributes:
       label: Reason for governance review request
