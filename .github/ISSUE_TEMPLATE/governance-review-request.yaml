@@ -74,5 +74,5 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional notes
-      description: Please add any additional notes here.
+      label: Additional notes and resources
+      description: Please add any additional notes and resources here.
