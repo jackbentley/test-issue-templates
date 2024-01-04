@@ -4,13 +4,18 @@ title: "[Governance Review]: PROJECT NAME"
 labels: ["wg/governance"]
 projects: ["cncf/25"]
 assignees:
-  - octocat
+  - jberkus
+  - aliok
+  - geekygirldawn
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for your interest in having a governance review request from TAG Contributor Strategy. 
         For more information on what a governance is, please visit our [governance documentation](https://contribute.cncf.io/maintainers/governance/overview/).
+        ---
+        This form helps CNCF TAG Contributor Strategy understand your project's governance structure and assess its readiness for a review.
+        For assistance, please contact us at [#tag-contributor-strategy](https://cloud-native.slack.com/archives/CT6CWS1JN) channel on CNCF Slack.
 
   - type: markdown
     attributes:
@@ -49,10 +54,10 @@ body:
 
   - type: input
     attributes:
-      label: Channel in CNCF Slack
-      placeholder: ex. `#channel-name`
+      label: Links to communication channels
+      placeholder: ex. Slack, WhatsApp, etc.
       description: |
-        Please provide the channel name in CNCF Slack where we can reach out to you for any questions.
+        Please provide us with the communication channel link to reach out to you if needed.
     validations:
       required: true
 
@@ -136,6 +141,19 @@ body:
         If there are any major milestones in the project's governance over time, please describe them here with supporting URL links.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional information
+
+  - type: textarea
+    attributes:
+      label: Any specific aspects of your governance structure are you seeking feedback on?
+
+  - type: textarea
+    attributes:
+      label: Do you have any concerns or specific areas where you feel your governance could be improved?
 
   - type: textarea
     attributes:
