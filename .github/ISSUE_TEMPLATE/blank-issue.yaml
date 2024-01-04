@@ -1,0 +1,9 @@
+name: Blank issue
+description: Open a blank issue
+
+body:
+  - type: textarea
+    attributes:
+      label: Add a description
+    validations:
+      required: true
