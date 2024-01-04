@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Open a blank issue
     url: https://github.com/aliok/test-issue-templates/issues/new
-    about: Please open a blank issue to start the process.
+    about: Please open a blank issue to if you don't see your issue type here.
